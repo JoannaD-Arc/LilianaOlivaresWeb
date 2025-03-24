@@ -11,6 +11,7 @@ Bienvenido/a al repositorio del **portafolio web dinámico** de **Karla Liliana 
 - **MySQL** - Base de datos para almacenar proyectos y clientes
 - **Firebase** - Autenticación y almacenamiento en la nube
 - **XAMPP** - Entorno de pruebas local
+- **Google Analytics** - Análisis de tráfico web
 
 ### 🎨 Diseño & UX/UI
 - **Adobe Illustrator** - Creación de gráficos y elementos visuales

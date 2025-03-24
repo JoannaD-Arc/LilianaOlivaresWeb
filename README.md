@@ -26,4 +26,4 @@ Bienvenido/a al repositorio del **portafolio web dinámico** de **Karla Liliana 
 - **Panel de administración**: Gestión sencilla del contenido
 
 ## 📬 Contacto
-Desarolladora Web - Joanna Paulina - JoannaaDeArc@gmail.com
+Desarolladora Web - Joanna Paulina Olivares Cortez- JoannaaDeArc@gmail.com

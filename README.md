@@ -1,6 +1,6 @@
 # 🎨 Portafolio Web de Karla Liliana Olivares Cortez
 
-Bienvenido/a al repositorio del **portafolio web dinámico** de **Karla Liliana Olivares Cortez**, una talentosa diseñadora de interiores. Este proyecto tiene como objetivo presentar su trabajo, trayectoria y facilitar el contacto con clientes potenciales.
+Bienvenido/a al repositorio del **portafolio web dinámico** de **Karla Liliana Olivares Cortez**, una talentosa diseñadora de interiores juarense. Este proyecto tiene como objetivo presentar su trabajo, trayectoria y facilitar el contacto con clientes potenciales.
 
 ## 🚀 Tecnologías Utilizadas
 

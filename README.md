@@ -19,6 +19,7 @@ Bienvenido/a al repositorio del **portafolio web dinámico** de **Karla Liliana 
 
 ## 📌 Funcionalidades Clave
 - **Sección de proyectos**: Muestra de trabajos de diseño de interiores
+- **Cotización de trabajo** : Muestra los precios solicitados para un trabajo por la diseñadora.
 - **Sobre mí**: Información de la diseñadora
 - **Formulario de contacto**: Para clientes interesados
 - **Diseño responsive**: Adaptado a todos los dispositivos

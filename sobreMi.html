@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GRR9HMZQRP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GRR9HMZQRP');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="CSS/sobremi.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>
+<!-- HEADER MOBILE -->
+<div class="mobile-header">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="logo-horizontal">LILIANA OLIVARES</div>
+  </div>
+  
+  <!-- HEADER MOBILE -->
+   
+  <!-- SIDEBAR -->
+  
+      <div class="sidebar">
+        <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Abrir menú lateral">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo-vertical">LILIANA OLIVARES</div>
+      </div>
+      
+      <nav class="menu-slide" id="menuSlide">
+        <div class="menu-header">
+          <div class="logo">LILIANA OLIVARES</div>
+          <div class="close-btn" onclick="toggleMenu()">×</div>
+        </div>
+        
+        <div class="menu-items">
+          <a href="index.html">INICIO</a>
+          <a href="sobreMi.html">ACERCA DE MI</a>
+          <a href="miTrabajo.php">MI TRABAJO</a>
+          <a href="misServicios.html">MIS SERVICIOS</a>
+          <a href="testimonios.html">TESTIMONIOS</a>
+          <a href="contacto.html">CONTACTO</a>
+        </div>
+        
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p>+52 656 600 8080</p>
+            <p>lilianaolivares@lilianaolivares.site</p>
+          </div>
+        </div>
+      </nav>
+  
+  <!-- SIDEBAR -->
+  
+    <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <div class="section-label">. SOBRE MÍ</div>
+        <h1>Bienvenida a mi mundo donde la inspiración impulsa el diseño</h1>
+        <p>Soy <strong>Karla Liliana Olivares Cortez</strong>, diseñadora de interiores juarense. Tengo un dominio profesional de SketchUp, AutoCAD, 3Ds Max y Revit; me encargo de cada detalle: desde el concepto hasta la entrega final.</p>
+        <p>Creo en la planificación rigurosa y en “medir dos veces antes de cortar una sola”. Mi meta es proyectos a tiempo y dentro de presupuesto, siempre priorizando la funcionalidad, la estética y la sostenibilidad.</p>
+      </div>
+      <div class="about-image">
+        <img src="IMG/LilianaFoto.jpg" alt="Karla Liliana Olivares trabajando">
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTRA SECCIÓN DE TRABAJO -->
+    <section class="work-section">
+    <div class="work-container">
+      <!-- Imágenes -->
+      <div class="work-images">
+        <div class="work-main">
+          <img src="IMG/renderSobreMi.png" alt="Diseño de interiores principal">
+        </div>
+        <div class="work-side">
+          <img src="IMG/Representacion.png" alt="Representacion">
+          <img src="IMG/Apuntes.jpeg" alt="Bocetos y muestras">
+        </div>
+      </div>
+      <!-- Texto -->
+      <div class="work-text">
+        <div class="section-label">MI TRABAJO</div>
+        <h2>Diseños con atención al detalle</h2>
+        <p>Me dedico al diseño arquitectónico, diseño de interiores, realización de proyectos de interiorismo y manejo de textiles decorativos.</p>
+        <p>Procuro espacios que reflejen la personalidad única de cada cliente. Espacios para vivir, no sólo para mostrar. Atiendo cada detalle con experiencia, talento y habilidades especializadas para que todo funcione en tiempo y presupuesto.</p>
+      </div>
+    </div>
+  </section>
+  
+ <!-- SECCIÓN DE TESTIMONIOS DINÁMICA -->
+<section class="testimonials-section">
+    <div class="testimonials-container">
+      <!-- Intro y botón -->
+      <div class="testimonials-intro">
+        <div class="section-label">. TESTIMONIOS</div>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <a href="#" class="btn-secondary">Más Testimonios ➔</a>
+      </div>
+  
+      <!-- Tarjeta de testimonial, será llenada por JS -->
+      <div class="testimonial-card">
+        <div class="quote-icon">“</div>
+        <p class="testimonial-text" id="testimonial-text"></p>
+        <div class="testimonial-footer">
+          <img src="" alt="Avatar cliente" id="testimonial-avatar">
+          <div class="client-info">
+            <h4 id="client-name"></h4>
+            <span id="client-role"></span>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="prev">&larr;</button>
+          <button class="next">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>TRÁBAJEMOS JUNTOS</h2>
+        <p class="phone">+52 656 600 8080</p>
+        <p class="email">lilianaolivares@lilianaolivares.site</p>
+        <address class="address">
+          Palma de Guinea Sur<br>
+          4831, México<br>
+          Chihuahua, Juárez
+        </address>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <ul class="links-column">
+            <li><a href="sobreMi.html">Sobre mí</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Mis Servicios</a></li>
+            <li><a href="PHP/login.html">Administrador</a></li>
+          </ul>
+          <ul class="links-column">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Lic. Karla Liliana Olivares Cortez | 2024 ©</p>
+    </div>
+  </footer>
+  
+  <script src="JS/contacto.js"></script>
+  <script src="JS/testimonios.js"></script>
+</body>
+</html>

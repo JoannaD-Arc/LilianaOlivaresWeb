@@ -1,0 +1,147 @@
+@import './variables.css';
+
+.main-content {
+    flex: 1;
+    padding: 80px 20px;
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+  
+
+    /* Imagen de fondo */
+    background-image: url('../IMG/Testimonio.png');
+    background-repeat: no-repeat;        /* Que no se tile */
+    background-size: cover;             /* Que cubra todo el contenedor */
+    background-position: center center; /* Centrada */
+
+    background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../IMG/Testimonio.png') center/cover no-repeat;
+  }
+  
+  .testimonials-section {
+    background-color: #f4f4ee;
+    padding: 8rem 2rem;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .testimonials-intro {
+    text-align: center;
+  }
+  .testimonials-intro .section-label {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .testimonials-intro h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin: 0 0 30px;
+    line-height: 1.2;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .testimonial-card .quote-icon {
+    font-size: 3rem;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  .testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+    flex: 1;
+  }
+  .testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .testimonial-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .testimonial-footer .client-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .testimonial-footer .client-info span {
+    font-size: 0.8rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  /* Footer básico */
+  .footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  /* ====== RESPONSIVE ====== */
+  @media screen and (max-width: 1024px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+    .testimonials-intro h2 {
+      font-size: 2rem;
+    }
+    .testimonial-card {
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Quitar fondo molesto en móvil */
+    .main-content {
+        display: flex;
+        justify-content: center;
+      background-image: none !important;
+    }
+  
+    /* Hacer que la sección ocupe todo el ancho y se centre */
+    .testimonials-section {
+      width: 100% !important;    /* ocupa el 100% del contenedor padre */
+      max-width: none;            /* anula cualquier max-width anterior */
+      margin: 0 auto;             /* la centra horizontalmente */
+      padding: 4rem 1rem;         /* ajusta padding para móvil */
+    }
+  
+    /* Asegurar que el grid de tarjetas también se adapte */
+    .testimonials-grid {
+      grid-template-columns: 1fr !important;  /* una columna */
+      gap: 2rem !important;
+    }
+  }
+  

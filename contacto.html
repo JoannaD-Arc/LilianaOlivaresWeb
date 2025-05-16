@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GRR9HMZQRP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GRR9HMZQRP');
+</script>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>
+
+<!-- HEADER MOBILE -->
+<div class="mobile-header">
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="logo-horizontal">LILIANA OLIVARES</div>
+</div>
+
+<!-- HEADER MOBILE -->
+ 
+<!-- SIDEBAR -->
+
+    <div class="sidebar">
+      <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Abrir menú lateral">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo-vertical">LILIANA OLIVARES</div>
+    </div>
+    
+    <nav class="menu-slide" id="menuSlide">
+      <div class="menu-header">
+        <div class="logo">LILIANA OLIVARES</div>
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+      </div>
+      
+      <div class="menu-items">
+        <a href="index.html">INICIO</a>
+        <a href="sobreMi.html">ACERCA DE MI</a>
+        <a href="miTrabajo.php">MI TRABAJO</a>
+        <a href="misServicios.html">MIS SERVICIOS</a>
+        <a href="testimonios.html">TESTIMONIOS</a>
+        <a href="contacto.html">CONTACTO</a>
+      </div>
+      
+      <div class="menu-footer">
+        <div class="contact-info">
+          <p>+52 656 600 8080</p>
+          <p>lilianaolivares@lilianaolivares.site</p>
+        </div>
+      </div>
+    </nav>
+
+<!-- SIDEBAR -->
+
+<!-- IMAGEN DE LA PAGINA -->
+    <div class="container">
+    <div class="image-section">
+      <img src="IMG/contactorender.png" alt="Render en Contacto">
+    </div>
+<!-- IMAGEN DE LA PAGINA -->
+ 
+<!-- PARTE DEL FORM -->
+    <div class="form-section">
+      <h1>CONTÁCTAME</h1>
+      <p><i>Conecta conmigo llenando el siguiente formulario y juntos hagamos tus sueños realidad.</i></p>
+          <form action="PHP/enviar.php" method="POST" enctype="multipart/form-data">
+      <div class="form-row">
+        <input name="nombre" type="text" placeholder="Nombre" required>
+        <input name="email" type="email" placeholder="E-Mail" required>
+      </div>
+    
+      <div class="form-row">
+        <select name="tipoConsulta" required>
+          <option value="" disabled selected hidden style="font-style: italic;">Seleccionar tipo de consulta</option>
+          <option value="Residencial">Residencial</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Oficina">Oficina</option>
+        </select>
+      </div>
+    
+      <div class="form-row">
+        <input name="presupuesto" type="text" placeholder="Presupuesto Aproximado">
+        <input name="tiempo" type="text" placeholder="Tiempo Requerido Aproximado">
+      </div>
+    
+      <textarea name="descripcion" placeholder="Describe tu proyecto/consulta." rows="4"></textarea>
+    
+<label for="upload">Adjuntar Archivos</label>
+<input
+  name="archivo[]"
+  type="file"
+  id="upload"
+  multiple
+>
+<small>Puedes seleccionar más de un archivo aquí.</small>
+
+
+    
+      <button type="submit">Enviar Consulta</button>
+    </form>
+
+    </div>
+  </div>
+<!-- PARTE DEL FORM -->
+    
+    <div id="notificacion" style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 9999;">
+      ¡Consulta enviada con éxito!
+    </div>
+
+
+    <!-- HTML -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>TRÁBAJEMOS JUNTOS</h2>
+      <p class="phone">+52 656 600 8080</p>
+      <p class="email">lilianaolivares@lilianaolivares.site</p>
+      <address class="address">
+        Palma de Guinea Sur<br>
+        4831, México<br>
+        Chihuahua, Juárez
+      </address>
+    </div>
+    <div class="footer-right">
+      <div class="footer-links">
+        <ul class="links-column">
+          <li><a href="sobreMi.html">Sobre mí</a></li>
+          <li><a href="#">Portafolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li><a href="#">Mis Servicios</a></li>
+        </ul>
+        <ul class="links-column">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Lic. Karla Liliana Olivares Cortez | 2024 ©</p>
+  </div>
+</footer>
+
+
+  <script src="JS/contacto.js"></script>
+</body>
+</html>

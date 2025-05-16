@@ -1,0 +1,83 @@
+/* Site Map Section */
+@import './variables.css';
+
+.site-map-section {
+  background-color: #fafafa;
+  padding: 4rem 1rem 6rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título grande */
+.site-map-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* Grid de dos columnas */
+.site-map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Cada columna */
+.site-map-col .col-label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 1rem;
+}
+.site-map-list {
+  list-style: none;
+  padding: 0;
+}
+.site-map-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.site-map-list li:last-child {
+  border-bottom: none;
+}
+.site-map-list li a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+.site-map-list li a:hover {
+  color: #000;
+}
+
+/* Botón circular CTA */
+.site-map-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  position: relative;
+  transition: background 0.2s, color 0.2s;
+}
+.site-map-cta span {
+  margin-right: 0.5rem;
+}
+.site-map-cta:hover {
+  background-color: #333;
+  color: #fff;
+}
+.site-map-cta svg {
+  display: block;
+}
